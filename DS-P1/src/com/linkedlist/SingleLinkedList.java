@@ -122,10 +122,10 @@ public class SingleLinkedList {
 			SingleNode nextNode = new SingleNode();
 			previousNode = head;
 			
-			for(int i = 0;i<location - 1;i++){
+			for(int i = 0;i<location;i++){
 				previousNode = previousNode.getNext();
 			}
-			nextNode = previousNode.getNext().getNext();
+			nextNode = previousNode.getNext();
 			previousNode.setNext(nextNode);
 			
 		}
